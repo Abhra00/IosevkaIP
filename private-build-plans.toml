@@ -487,8 +487,10 @@ css = "normal"
 [buildPlans.IosevkaIp.metricOverride]
 xHeight = 660
 cap = 800
-ascender = 830
+ascender = 800
 leading = 1300
 parenSize = 950
+winMetricAscenderPad = 50
+winMetricDescenderPad = 50
 dotSize = "blend(weight, [100, 45], [200, 74], [300, 103], [400, 124], [500, 132], [600, 140], [700, 147], [800, 156], [900, 164])"
 periodSize = "blend(weight, [100, 50], [200, 84], [300, 119], [400, 142], [500, 151], [600, 159], [700, 169], [800, 177], [900, 186])"
