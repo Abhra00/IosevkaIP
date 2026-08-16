@@ -484,13 +484,11 @@ shape = 575
 menu = 5
 css = "normal"
 
-[buildPlans.IosevkaIp.metricOverride]
-xHeight = 660
-cap = 780
-ascender = 830
-leading = 1300
+[buildPlans.IosevkaIP.metricOverride]
+leading = 1250
 parenSize = 950
-winMetricAscenderPad = 50
-winMetricDescenderPad = 50
-dotSize = "blend(weight, [100, 45], [200, 74], [300, 103], [400, 124], [500, 132], [600, 140], [700, 147], [800, 156], [900, 164])"
-periodSize = "blend(weight, [100, 50], [200, 84], [300, 119], [400, 142], [500, 151], [600, 159], [700, 169], [800, 177], [900, 186])"
+cap = 800
+ascender = 800
+xHeight = 600
+dotSize = "blend(weight, [100, 57], [200, 96], [300, 135], [400, 163], [500, 174], [600, 184], [700, 195], [800, 205], [900, 216])"
+periodSize = "blend(weight, [100, 63], [200, 108], [300, 154], [400, 186], [500, 198], [600, 210], [700, 221], [800, 233], [900, 244])"
