@@ -484,7 +484,7 @@ shape = 575
 menu = 5
 css = "normal"
 
-[buildPlans.IosevkaIP.metricOverride]
+[buildPlans.IosevkaIp.metricOverride]
 leading = 1250
 parenSize = 950
 cap = 800
