@@ -22,6 +22,11 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install ttfautohint
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ttfautohint
+
       - name: Drop in build plan
         run: cp private-build-plans.toml iosevka-src/private-build-plans.toml
 
