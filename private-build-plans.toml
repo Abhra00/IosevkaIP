@@ -4,6 +4,7 @@ spacing = "fixed"
 serifs = "sans"
 noCvSs = true
 exportGlyphNames = false
+noLigation = true
 
 [buildPlans.IosevkaIp.variants.design]
 one = "base"
@@ -467,7 +468,28 @@ shape = 900
 menu = 900
 css = 900
 
+[buildPlans.IosevkaIp.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.IosevkaIp.slopes.Oblique]
+angle = 15
+shape = "oblique"
+menu = "oblique"
+css = "oblique"
+
 [buildPlans.IosevkaIp.widths.Normal]
-shape = 500
+shape = 575
 menu = 5
 css = "normal"
+
+[buildPlans.IosevkaIp.metricOverride]
+leading = 1100
+parenSize = 950
+cap = 800
+ascender = 800
+xHeight = 600
+dotSize = "blend(weight, [100, 50], [360, 140], [900, 190])"
+periodSize = "blend(weight, [100, 55], [360, 160], [900, 215])"
