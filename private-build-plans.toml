@@ -486,11 +486,11 @@ menu = 5
 css = "normal"
 
 [buildPlans.IosevkaIp.metricOverride]
-leading = 1100
+leading = 1500
 parenSize = 950
 cap = 800
-ascender = 800
-descender = -300
+ascender = 1000
+descender = -500
 xHeight = 600
 dotSize = "blend(weight, [100, 50], [360, 140], [900, 190])"
 periodSize = "blend(weight, [100, 55], [360, 160], [900, 215])"
