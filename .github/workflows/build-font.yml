@@ -1,0 +1,50 @@
+name: Build Iosevka IP
+
+on:
+  push:
+    paths:
+      - "private-build-plans.toml"
+      - ".github/workflows/build-font.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout config repo
+        uses: actions/checkout@v4
+
+      - name: Checkout Iosevka source
+        uses: actions/checkout@v4
+        with:
+          repository: be5invis/Iosevka
+          path: iosevka-src
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Drop in build plan
+        run: cp private-build-plans.toml iosevka-src/private-build-plans.toml
+
+      - name: Install deps
+        working-directory: iosevka-src
+        run: npm ci
+
+      - name: Build TTFs
+        working-directory: iosevka-src
+        run: npm run build -- ttf::IosevkaIp -- -j $(nproc)
+
+      - name: Stage built fonts
+        run: |
+          mkdir -p assets
+          rm -f assets/*.ttf
+          cp iosevka-src/dist/IosevkaIp/TTF/*.ttf assets/
+
+      - name: Commit built fonts
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "ci: rebuild IosevkaIp fonts"
+          file_pattern: assets/*.ttf
