@@ -490,6 +490,7 @@ leading = 1100
 parenSize = 950
 cap = 800
 ascender = 800
+descender = -300
 xHeight = 600
 dotSize = "blend(weight, [100, 50], [360, 140], [900, 190])"
 periodSize = "blend(weight, [100, 55], [360, 160], [900, 215])"
