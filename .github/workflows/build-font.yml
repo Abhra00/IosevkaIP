@@ -1,10 +1,6 @@
 name: Build Iosevka IP
 
 on:
-  push:
-    paths:
-      - "private-build-plans.toml"
-      - ".github/workflows/build-font.yml"
   workflow_dispatch:
 
 jobs:
@@ -35,7 +31,7 @@ jobs:
 
       - name: Build TTFs
         working-directory: iosevka-src
-        run: npm run build -- ttf::IosevkaIp -- -j $(nproc)
+        run: npm run build -- ttf::IosevkaIp -j $(nproc)
 
       - name: Stage built fonts
         run: |
