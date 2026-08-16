@@ -487,7 +487,7 @@ css = "normal"
 [buildPlans.IosevkaIp.metricOverride]
 xHeight = 660
 cap = 800
-ascender = 800
+ascender = 780
 leading = 1300
 parenSize = 950
 winMetricAscenderPad = 50
