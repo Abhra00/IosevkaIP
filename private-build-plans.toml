@@ -422,27 +422,22 @@ pilcrow = "high"
 micro-sign = "tailed-serifless"
 decorative-angle-brackets = "middle"
 
-[buildPlans.IosevkaIp.weights.Bold]
-shape = 700
-menu = 700
-css = 700
-
 [buildPlans.IosevkaIp.weights.Thin]
 shape = 100
 menu = 100
 css = 100
 
-[buildPlans.IosevkaIp.weights.ExtraLight]
+[buildPlans.IosevkaIp.weights.Light]
 shape = 200
 menu = 200
 css = 200
 
-[buildPlans.IosevkaIp.weights.Light]
+[buildPlans.IosevkaIp.weights.Regular]
 shape = 300
 menu = 300
 css = 300
 
-[buildPlans.IosevkaIp.weights.Regular]
+[buildPlans.IosevkaIp.weights.Retina]
 shape = 400
 menu = 400
 css = 400
@@ -457,6 +452,11 @@ shape = 600
 menu = 600
 css = 600
 
+[buildPlans.IosevkaIp.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
 [buildPlans.IosevkaIp.weights.ExtraBold]
 shape = 800
 menu = 800
@@ -468,6 +468,6 @@ menu = 900
 css = 900
 
 [buildPlans.IosevkaIp.widths.Normal]
-shape = 600
+shape = 500
 menu = 5
 css = "normal"
