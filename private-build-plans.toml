@@ -486,9 +486,7 @@ css = "normal"
 
 [buildPlans.IosevkaIp.metricOverride]
 leading = 1250
-winAscent = 850
-winDescent = 150
-typoAscender = 850
-typoDescender = -150
-hheaAscender = 850
-hheaDescender = -150
+ascender = 735
+descender = -215
+winAscentPad = 115
+winDescentPad = 185
