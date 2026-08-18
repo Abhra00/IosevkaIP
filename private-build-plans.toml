@@ -485,8 +485,6 @@ menu = 5
 css = "normal"
 
 [buildPlans.IosevkaIp.metricOverride]
-leading = 1250
-ascender = 735
-descender = -215
-winAscentPad = 115
-winDescentPad = 185
+leading = 1200
+cap = 720
+xHeight = 520
