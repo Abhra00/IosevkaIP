@@ -483,3 +483,12 @@ css = "oblique"
 shape = 575
 menu = 5
 css = "normal"
+
+[buildPlans.IosevkaIp.metric-override]
+leading = 1250
+winAscent = 850
+winDescent = 150
+typoAscender = 850
+typoDescender = -150
+hheaAscender = 850
+hheaDescender = -150
